@@ -12,7 +12,7 @@
 
   main {
       background: #EEE;
-      height: 85vh;
+      height: 97vh;
   }
 
   table,
@@ -33,4 +33,25 @@
     border: 1px solid #000;
     text-align: center;
     font-size: 2em;
+    cursor: pointer;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#reset {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 6rem;
+    height: 3rem;
+    background-color: #444;
+    border-radius: 10%;
 }
