@@ -27,6 +27,7 @@ function play(id) {
         board[id] = 'O';
         turn = 'X';           
     }
+
 // write logic for winning
 // declare a winner
 const sqOne = board[0],
@@ -58,16 +59,17 @@ const sqOne = board[0],
 
 
 
-    // find if board is full
-    let boardFull = true;
-    for (let i = 0; i <= 8; i++) {
-      if (board[i] === undefined) {
-        boardFull = false;
-      }
-    }
-    if (boardFull) {
-      alert("No one wins, try again");
-    }
+
+        // find if board is full
+        let boardFull = true;
+        for (let i = 0; i <= 8; i++) {
+          if (board[i] === undefined) {
+            boardFull = false;
+          }
+        }
+        if (boardFull && !sqOne && !sqFour && !sqSeven && !sqTwo && !sqThree) {
+          alert("No one wins, try again");
+        }
 
    
    
