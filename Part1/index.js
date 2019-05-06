@@ -10,16 +10,9 @@ function play(id) {
     const playerSpan = document.getElementById('player');
     const clickedBox = document.getElementById(id);
 
-//     let td = document.querySelectorAll('td'),
-//         result;
-//         console.log(td)
-//     for (let i=0; i<9; i++) {
-//         result = td[i];
-//         result.addEventListener('click', function() {
- 
-//         });
-//    }
-
+      if(board[id]) {
+        return
+      }
     // shows whos turn it is 
     // when square is clicked, input X or O depending on the turn
      // if square is truthy, do not replace X or O
@@ -62,6 +55,7 @@ const sqOne = board[0],
     sqOne !== undefined && sqOne === sqFive && sqOne === sqNine ? alert(`${sqOne} is the winner`) : false
     // 3,5,7
     sqThree !== undefined && sqThree === sqFive && sqThree === sqSeven ? alert(`${sqThree} is the winner`) : false
+
 
 
     // find if board is full
